@@ -17,7 +17,7 @@ const Results = ({ res }) => {
     );
   });
 
-  return <div className="row">{cols}</div>;
+  return <div className="row gy-0">{cols}</div>;
 };
 
 export default Results;

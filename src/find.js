@@ -30,9 +30,9 @@ const isMatch = (pattern, word) => {
 export const findAnag = (word) => {
   return sameLen(dictionary, word.length)
     .filter(
-      (elem) => elem[0] === word.split("").sort().join("") && elem[1] !== word
+      (elem) => elem[1] === word.split("").sort().join("") && elem[0] !== word
     )
-    .map((e) => e[1]);
+    .map((e) => e[0]);
 };
 
 export const complete = (str) => {
