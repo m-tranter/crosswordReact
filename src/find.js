@@ -1,5 +1,5 @@
-import dictionary from "./dict";
-import byLength from "./byLength";
+const { byLength } = require("./byLength.js");
+const { dictionary } = require("./dict.js");
 
 const first = (arr, i) => {
   return arr[i].length;
